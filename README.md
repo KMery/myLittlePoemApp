@@ -15,6 +15,8 @@ This project uses PoetryDB to get the authors and poems for this app. If you wan
         /random-poem
             This get a random poem from PoetryDB
 
+You can test the deploy version in: https://my-little-poem-app.herokuapp.com/
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
