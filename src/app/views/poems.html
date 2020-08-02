@@ -1,0 +1,40 @@
+<div class="poems">
+    <div *ngIf="author && !showPoem" class="poem-list">
+        <h3> <span class="badge badge-success"> {{ title }} </span> </h3>
+        <p> You can choose a poem </p>
+        <hr>
+        <h4>The selected author is <strong> {{ author }} </strong> </h4>
+
+        <div *ngIf="!poems">
+            <p>Loading poems...</p>
+        </div>
+
+        <div *ngIf="poems">
+            <ul *ngFor="let poem of poems">
+                <a [routerLink]="" (click)="showSelectPoem(false, poem)">
+                    <li> {{ poem.title }} </li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    
+    <div *ngIf="showPoem" class="selected-poem">
+        <div class="author-title">
+            <h2> <strong>{{ poem.author }}</strong></h2>
+            <h4>{{ poem.title }}</h4>
+        </div>
+        <div class="poem-lines">
+            <ul *ngFor="let line of poem.lines">
+                <li> {{ line }} </li>
+                <br>
+            </ul>
+        </div>
+    </div>
+    
+    <div *ngIf="!author">
+        <p id="choose-author">Choose an author to begin</p>
+        <hr>
+        <authors (authorEvent)="receiveAuthor($event)"></authors>
+    </div>    
+</div>
+

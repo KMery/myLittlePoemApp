@@ -1,0 +1,71 @@
+@mixin desktop
+    @media (min-width: #{$phone-width + 1})     
+        @content
+            
+.poems
+    @include desktop
+        margin: 20px
+
+        h3
+            span
+                min-width: 600px
+        
+
+        p
+            font-size: 20px
+            text-align: center
+        
+        a
+            font-size: 20px
+            text-decoration: none
+            width: 600px
+               
+        
+        a:hover
+            font-size: 22px
+            font-weight: bold
+            color: #21201f
+        
+        li
+            list-style: none
+            font-size: 20px
+
+        .selected-poem
+            justify-content: center
+            padding: 40px
+    
+.authors
+    @include desktop
+        min-width: 800px
+
+        h2
+            font-size: 55px
+        
+        p
+            font-size: 30px
+
+        .home-buttons
+            display: flex
+            flex-direction: column
+
+            button
+                min-width: 400px
+                font-size: 30px
+                margin: 
+                    top: 20px
+
+        .get-authors
+            button
+                min-width: 400px
+                font-size: 20px
+
+        li
+            font-size: 20px
+            color: #242322
+            width: 600px
+            padding: 10px
+        
+        li:hover
+            font-weight: bold
+            color: #21201f
+            background-color: #e0ac77

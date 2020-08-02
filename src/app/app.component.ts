@@ -3,8 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['../assets/styles/app.component.sass']
 })
 export class AppComponent {
-  title = 'poemApp';
+  public title:string;
+
+    constructor() {
+      this.title = 'My little poem app'
+    }
 }

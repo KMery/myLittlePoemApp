@@ -1,0 +1,113 @@
+@import 'breakpoints', 'phone', 'desktop'
+
+nav
+    display: flex
+
+    a
+        font-family: 'Sacramento', cursive
+        color: white
+        font-size: 25px
+
+    #app-title
+        font-size: 30px
+
+body
+    background-color: lightgreen
+    font-family: 'Merriweather Sans', sans-serif
+    color: black
+
+    button
+        min-width: 250px
+
+    .authors
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        background-color: #edd593
+        padding:
+            top: 10px 
+            bottom: 30px
+        
+        img
+            width: 600px
+
+        h2
+            font-family: 'Bebas Neue', cursive
+
+        .get-authors
+            display: flex
+            justify-content: center
+
+        .list_authors
+            margin: 
+                top: 20px
+            li
+                list-style: none
+    
+    .poems
+        background-color: #fadd8c
+        display: flex
+        justify-content: center        
+        align-items: center
+        flex-direction: column
+        flex-grow: 2
+        padding: 
+            bottom: 50px
+        
+        h4
+            font-family: 'Bebas Neue', cursive
+        
+        .poem-list
+            h3
+                font-family: 'Bebas Neue', cursive
+                color: #2f5712
+            
+            li
+                color: black
+                flex-wrap: wrap
+    
+        .selected-poem
+            display: flex
+            flex-direction: column
+
+            .author-title
+                font-family: 'Bebas Neue', cursive
+
+            .poem-lines
+                margin: 
+                    top: 20px
+                li
+                    list-style: none
+
+        #random-title
+            text-align: center
+
+footer
+    background-color: #575655
+    width: 100%
+    // padding: 10px
+    position: fixed
+    right: 0
+    bottom: 0
+    display: flex
+    // flex-direction: row
+    justify-content: space-between
+    margin: auto
+
+    .icons
+        i
+            width: 60px
+            height: 30px
+            text-align: center
+            color: white
+        i:hover
+            background-color: #403f3e
+
+    p
+        color: white
+        // text-align: right
+        justify-content: flex-end
+        margin: 
+            right: 15px
+        

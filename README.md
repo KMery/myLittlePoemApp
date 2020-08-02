@@ -1,6 +1,19 @@
-# PoemApp
+# My little PoemApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
+
+## Description
+This project uses PoetryDB to get the authors and poems for this app. If you want to know more visit "https://poetrydb.org/index.html"
+
+## Routes
+    /home
+        Here you can choose between pick an author or get a random poem
+
+        /poems
+            This get the author list for you to pick one an then a poem from that selected author
+
+        /random-poem
+            This get a random poem from PoetryDB
 
 ## Development server
 
@@ -25,3 +38,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Aknowledgments
+    Thanks to PoetryDB for make such an interesting API
+
+## Author
+    This project was made by KMery 2020. 

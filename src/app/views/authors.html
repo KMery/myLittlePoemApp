@@ -1,0 +1,12 @@
+<div class="authors">
+    <h2> {{title}} </h2>
+    <div class="get-authors">
+        <button (click)="selectAuthor()" class="btn btn-outline-dark" id="get-authors">Get all the authors</button>
+    </div>
+
+    <div class="list_authors">
+        <ul *ngFor="let author_name of author">s
+            <a [routerLink]="" (click)="saveAuthor(author_name)"><li>{{author_name}}</li></a>
+        </ul>
+    </div>
+</div>

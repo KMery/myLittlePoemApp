@@ -1,0 +1,22 @@
+<div class="poems">
+    <h3 id="random-title"> <span class="badge badge-success"> {{ title }} </span> </h3>
+    
+    <div class="selected-poem">
+        <div *ngIf="poem.title == ''">
+            <p>Loading poem...</p>
+        </div>
+
+        <div *ngIf="poem.title != ''">
+            <div class="author-title">
+                <h2> <strong>{{ poem.author }}</strong></h2>
+                <h4>{{ poem.title }}</h4>
+            </div>
+            <div class="poem-lines">
+                <ul *ngFor="let line of poem.lines">
+                    <li> {{ line }} </li>
+                    <br>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
